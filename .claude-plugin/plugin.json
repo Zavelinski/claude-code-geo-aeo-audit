@@ -1,10 +1,17 @@
 {
   "name": "geo-aeo-audit",
   "description": "Audits a page for citability by AI answer engines and outputs paste-ready structure (definition block, JSON-LD, FAQ). Scoped to AEO, not classic SEO.",
-  "version": "1.0.0",
-  "author": { "name": "Zavelinski" },
+  "version": "1.0.1",
+  "author": {
+    "name": "Zavelinski"
+  },
   "homepage": "https://github.com/Zavelinski/claude-code-geo-aeo-audit",
   "repository": "https://github.com/Zavelinski/claude-code-geo-aeo-audit",
   "license": "MIT",
-  "keywords": ["aeo","seo","answer-engine-optimization","geo"]
+  "keywords": [
+    "aeo",
+    "seo",
+    "answer-engine-optimization",
+    "geo"
+  ]
 }
