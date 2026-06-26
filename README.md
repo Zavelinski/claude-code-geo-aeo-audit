@@ -1,5 +1,10 @@
 # geo-aeo-audit for Claude Code
 
+[![License: MIT](https://img.shields.io/github/license/Zavelinski/geo-aeo-audit)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Zavelinski/geo-aeo-audit?style=flat)](https://github.com/Zavelinski/geo-aeo-audit/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Zavelinski/geo-aeo-audit)](https://github.com/Zavelinski/geo-aeo-audit/commits)
+[![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](https://claude.com/claude-code)
+
 A [Claude Code](https://claude.com/claude-code) skill that audits a page for **citability by AI answer engines** — ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot — and gives you the exact structure to add so they can quote you.
 
 Classic SEO optimizes to **rank**. GEO/AEO optimizes to be **quoted inside the answer**. This skill is scoped narrowly to that: how easily an engine can lift a correct, attributable snippet from your page.
