@@ -1,8 +1,8 @@
 # geo-aeo-audit for Claude Code
 
-[![License: MIT](https://img.shields.io/github/license/Zavelinski/geo-aeo-audit)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/Zavelinski/geo-aeo-audit?style=flat)](https://github.com/Zavelinski/geo-aeo-audit/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/Zavelinski/geo-aeo-audit)](https://github.com/Zavelinski/geo-aeo-audit/commits)
+[![License: MIT](https://img.shields.io/github/license/Zavelinski/claude-code-geo-aeo-audit)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Zavelinski/claude-code-geo-aeo-audit?style=flat)](https://github.com/Zavelinski/claude-code-geo-aeo-audit/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Zavelinski/claude-code-geo-aeo-audit)](https://github.com/Zavelinski/claude-code-geo-aeo-audit/commits)
 [![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](https://claude.com/claude-code)
 
 A [Claude Code](https://claude.com/claude-code) skill that audits a page for **citability by AI answer engines** — ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot — and gives you the exact structure to add so they can quote you.
@@ -27,7 +27,7 @@ A citability score, a gap list by severity, and **paste-ready fixes**: a definit
 ## Install
 
 ```bash
-git clone https://github.com/Zavelinski/geo-aeo-audit.git
+git clone https://github.com/Zavelinski/claude-code-geo-aeo-audit.git
 cd geo-aeo-audit
 ```
 
@@ -59,3 +59,14 @@ bash uninstall.sh      # macOS / Linux
 ## License
 
 MIT. See [LICENSE](LICENSE). Original work.
+
+---
+
+## Install as a Claude Code plugin
+
+```bash
+/plugin marketplace add Zavelinski/claude-code-skills
+/plugin install geo-aeo-audit@claude-code-skills
+```
+
+Part of the **[claude-code-skills](https://github.com/Zavelinski/claude-code-skills)** collection: a suite of focused, original Claude Code skills.
