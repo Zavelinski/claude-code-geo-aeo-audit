@@ -9,6 +9,46 @@ A [Claude Code](https://claude.com/claude-code) skill that audits a page for **c
 
 Classic SEO optimizes to **rank**. GEO/AEO optimizes to be **quoted inside the answer**. This skill is scoped narrowly to that: how easily an engine can lift a correct, attributable snippet from your page.
 
+## Prerequisites
+
+Claude Code with `/plugin` support (v2.x+) and a shell if you use the manual fallback.
+
+## Install
+
+### Option 1 — Claude Code plugin marketplace (recommended)
+
+```bash
+/plugin marketplace add Zavelinski/claude-code-skills
+/plugin install geo-aeo-audit@claude-code-skills
+```
+
+Registered hooks (if any) install through the Claude Code consent UI, with no manual edit to `~/.claude/settings.json`.
+
+### Option 2 — Manual fallback (run it yourself)
+
+> **Security note.** This script mutates `~/.claude/settings.json` directly. Claude Code auto-mode blocks it because a third-party `UserPromptSubmit` hook that injects text into every prompt is a known risk vector. The script is benign and local-only (no network), but you must review and run it yourself. Prefer Option 1.
+
+```bash
+git clone https://github.com/Zavelinski/claude-code-geo-aeo-audit.git
+cd claude-code-geo-aeo-audit
+bash install.sh        # macOS / Linux
+.\install.ps1          # Windows (PowerShell)
+```
+
+## Uninstall
+
+```bash
+/plugin uninstall geo-aeo-audit@claude-code-skills    # Option 1
+bash uninstall.sh                                # Option 2 (or uninstall.ps1 on Windows)
+```
+
+## Update
+
+```bash
+/plugin marketplace update claude-code-skills    # Option 1
+# Option 2: pull the latest commit and re-run the manual fallback.
+```
+
 ## What it scores (citability rubric)
 
 1. **Lead answer** — core question answered in the first screen, in a liftable sentence.
@@ -24,49 +64,14 @@ Classic SEO optimizes to **rank**. GEO/AEO optimizes to be **quoted inside the a
 
 A citability score, a gap list by severity, and **paste-ready fixes**: a definition/lead block, filled-in JSON-LD, an FAQ block (drawn from your page), and heading rewrites. Optionally, a check of whether the engines cite the page today (and re-runs to track movement).
 
-## Install
-
-```bash
-git clone https://github.com/Zavelinski/claude-code-geo-aeo-audit.git
-cd geo-aeo-audit
-```
-
-**macOS / Linux**
-```bash
-bash install.sh
-```
-
-**Windows (PowerShell)**
-```powershell
-.\install.ps1
-```
-
-Skill-only install (no hooks, no `settings.json` changes). Restart Claude Code, then ask for a **GEO audit** (or `/geo-aeo-audit <url>`).
-
 ## Honest scope
 
 GEO is an emerging, moving target — answer engines change how they select and cite sources, and no on-page change guarantees a citation. This skill maximizes how liftable and attributable your content is (the part you control). It never invents facts or fakes schema; generated FAQ/definitions must be supported by the page. Other GEO/SEO tools exist; this one is deliberately about citability mechanics, not rankings.
-
-## Uninstall
-
-```bash
-bash uninstall.sh      # macOS / Linux
-```
-```powershell
-.\uninstall.ps1        # Windows
-```
 
 ## License
 
 MIT. See [LICENSE](LICENSE). Original work.
 
 ---
-
-## Install as a Claude Code plugin
-
-```bash
-/plugin marketplace add Zavelinski/claude-code-skills
-/plugin install geo-aeo-audit@claude-code-skills
-```
 
 Part of the **[claude-code-skills](https://github.com/Zavelinski/claude-code-skills)** collection: a suite of focused, original Claude Code skills.
