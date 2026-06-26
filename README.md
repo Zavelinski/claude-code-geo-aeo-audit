@@ -74,4 +74,6 @@ MIT. See [LICENSE](LICENSE). Original work.
 
 ---
 
-Part of the **[claude-code-skills](https://github.com/Zavelinski/claude-code-skills)** collection: a suite of focused, original Claude Code skills.
+## Part of claude-code-skills
+
+This skill ships in the [claude-code-skills](https://zavelinski.github.io/claude-code-skills/) marketplace. Browse its landing page: [geo-aeo-audit](https://zavelinski.github.io/claude-code-skills/geo-aeo-audit.html). See also: [docs-drift-sync](https://github.com/Zavelinski/claude-code-docs-drift-sync), [content-repurpose-engine](https://github.com/Zavelinski/claude-code-content-repurpose-engine).
